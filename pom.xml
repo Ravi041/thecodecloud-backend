@@ -76,7 +76,7 @@
 		<snapshotRepository>
 			<id>nexus</id>
 			<name>devopsodia-mvn-backendapp-snapshot</name>
-		       <url>http://35.175.204.142:8081/repository/devopsodia-mvn-backendapp-snapshot/</url>
+		       <url>http://3.87.250.245:8081/#admin/repository/repositories:devopsodia-mvn-backendapp-snapshot/</url>
 		</snapshotRepository>
 	</distributionManagement>
 </project>
