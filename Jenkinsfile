@@ -10,12 +10,12 @@ pipeline {
         //This can be http or https
         NEXUS_PROTOCOL= "http"
         //Where your Nexus is running
-        NEXUS_URL= "35.175.204.142:8081"
+        NEXUS_URL= "3.87.250.245:8081"
         // Repository Name where we will upload the artifacts
         NEXUS_REPOSITORY= "devopsodia-mvn-backendapp-snapshot"
         // Jenkins credentials id to authenticate to Nexus OSS
         NEXUS_CREDENTIAL_ID= "nexus_creds"
-        AWS_ACCOUNT_ID="314156154970"
+        AWS_ACCOUNT_ID="260205721048"
         AWS_DEFAULT_REGION="us-east-1"
         IMAGE_REPO_NAME="devopsodia-backendapp"
         IMAGE_TAG="${env.BUILD_NUMBER}"
@@ -26,7 +26,7 @@ pipeline {
         stage('Git Checkout') {
             steps {
             script{
-                git branch: 'main', credentialsId: 'GitHub', url:  'https://github.com/devopsodia/devopsodia-backendapp.git'  
+                git branch: 'main', credentialsId: 'GitHub', url:  'https://github.com/Ravi041/thecodecloud-backend.git'  
                 }  
             }
         }
